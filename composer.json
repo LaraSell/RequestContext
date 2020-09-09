@@ -1,0 +1,18 @@
+{
+    "name": "larasell/request-context",
+    "description": "A context manager for setting and getting contextual data easily",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tehran Alishov",
+            "email": "tehran.alishov@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "LaraSell\\RequestContext\\": "src/"
+        }
+    }
+}
