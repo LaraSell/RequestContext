@@ -7,7 +7,7 @@ use LaraSell\RequestContext\Managers\ContextManager;
 
 class Context extends Facade
 {
-    public static function getFacadeAccessor()
+    protected static function getFacadeAccessor()
     {
         return ContextManager::class;
     }
