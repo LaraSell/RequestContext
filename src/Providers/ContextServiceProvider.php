@@ -29,7 +29,9 @@ class ContextServiceProvider extends Illuminate\Support\ServiceProvider
     }
 
     /**
-     * Boot methods for the package
+     * Bootstrap the context service.
+     *
+     * @return void
      */
     public function boot()
     {
