@@ -1,6 +1,6 @@
 {
     "name": "larasell/request-context",
-    "description": "A context manager for setting and getting contextual data easily",
+    "description": "Laravel context manager for setting and getting contextual data easily",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -14,5 +14,6 @@
         "psr-4":{
             "LaraSell\\RequestContext\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
