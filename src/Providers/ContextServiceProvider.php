@@ -4,7 +4,7 @@ namespace LaraSell\RequestContext\Providers;
 
 use LaraSell\RequestContext\Managers\ContextManager;
 
-class ContextServiceProvider extends Illuminate\Support\ServiceProvider
+class ContextServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
      * Register bindings in the container.
