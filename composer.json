@@ -1,6 +1,6 @@
 {
     "name": "larasell/request-context",
-    "description": "Laravel context manager for setting and getting contextual data easily",
+    "description": "Laravel context manager for setting and getting contextual request data easily",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -9,11 +9,29 @@
             "email": "tehran.alishov@gmail.com"
         }
     ],
-    "require": {},
-    "autoload": {
-        "psr-4":{
-            "LaraSell\\RequestContext\\": "src/"
-        }
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1"
     },
-    "minimum-stability": "dev"
+    "autoload": {
+        "psr-4": {
+            "LaraSell\\RequestContext\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraSell\\RequestContext\\Providers\\ContextServiceProvider"
+            ],
+            "aliases": {
+                "Context": "LaraSell\\RequestContext\\Facades\\Context"
+            }
+        }
+    }
 }
